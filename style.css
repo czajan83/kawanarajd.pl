@@ -281,6 +281,10 @@ p{
   font-size:1.2rem;
 }
 
+.supporters-cards{
+  grid-template-columns:minmax(0,380px);
+}
+
 .offer-section,
 .portfolio-section,
 .contact-section{
