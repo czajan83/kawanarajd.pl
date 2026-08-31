@@ -253,6 +253,10 @@ p{
   gap:30px;
 }
 
+.event-cards{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
 .card{
   background:#1b1b1b;
   border-radius:28px;
@@ -283,6 +287,10 @@ p{
 
 .supporters-cards{
   grid-template-columns:minmax(0,380px);
+}
+
+.card img.supporter-logo{
+  padding:clamp(42px,7vw,82px);
 }
 
 .offer-section,
@@ -501,6 +509,10 @@ footer{
 }
 
 @media(max-width:900px){
+  .event-cards{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
   .top-nav{
     padding:16px 22px;
   }
@@ -538,6 +550,10 @@ footer{
 }
 
 @media(max-width:600px){
+  .event-cards{
+    grid-template-columns:1fr;
+  }
+
   html{
     scroll-padding-top:120px;
   }
